@@ -1,8 +1,11 @@
 class Person {
-  double? weight;
-  double? height;
+  final double weight;
+  final double height;
 
-  void calculate() {
-    double result = weight! / (height! * height!);
+  Person({required this.weight, required this.height});
+
+  double calculate() {
+    double imc = weight / (height * height);
+    return double.parse(imc.toStringAsFixed(2));
   }
 }
