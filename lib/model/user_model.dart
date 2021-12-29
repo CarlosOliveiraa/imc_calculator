@@ -6,6 +6,6 @@ class Person {
 
   double calculate() {
     double imc = weight / (height * height);
-    return double.parse(imc.toStringAsFixed(2));
+    return double.parse(imc.toStringAsPrecision(4));
   }
 }

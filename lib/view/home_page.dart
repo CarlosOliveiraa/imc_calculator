@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:imc_calculator/controller/imc_controller.dart';
-import 'package:imc_calculator/model/user_model.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({
