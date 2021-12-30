@@ -15,30 +15,6 @@ class _HomePageState extends State<HomePage> {
 
   ImcController imcController = ImcController();
 
-  // TextEditingController weihtController = TextEditingController();
-  // TextEditingController heightController = TextEditingController();
-
-  // void calculate() {
-  //   setState(() {
-  //     double weight = double.parse(weihtController.text);
-  //     double height = double.parse(heightController.text) / 100;
-  //     double imc = weight / (height * height);
-  //     if (imc < 18.5) {
-  //       infoText = 'Abaixo do peso (${imc.toStringAsPrecision(4)})';
-  //     } else if (imc > 18.5 || imc < 24.5) {
-  //       infoText = 'Peso ideal (${imc.toStringAsPrecision(4)})';
-  //     } else if (imc > 25 || imc < 29.9) {
-  //       infoText = 'Sobrepeso (${imc.toStringAsPrecision(4)})';
-  //     } else if (imc > 30 || imc < 34.9) {
-  //       infoText = 'Obesidade Grau I (${imc.toStringAsPrecision(4)})';
-  //     } else if (imc > 35 || imc < 39.9) {
-  //       infoText = 'Obesidade Grau II (${imc.toStringAsPrecision(4)})';
-  //     } else if (imc > 40) {
-  //       infoText = 'Obesidade Grau III (${imc.toStringAsPrecision(4)})';
-  //     }
-  //   });
-  // }
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(

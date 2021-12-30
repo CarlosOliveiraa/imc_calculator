@@ -9,7 +9,7 @@ class ImcController {
   }
 
   void setHeight(String height) {
-    _height = double.parse(height);
+    _height = double.parse(height) / 100;
   }
 
   String imcResult() {
@@ -21,13 +21,13 @@ class ImcController {
 
     if (imc < 18.5) {
       _result = 'Abaixo do peso (${imc.toStringAsPrecision(2)})';
-    } else if (imc > 18.5 || imc < 24.5) {
+    } else if (imc > 18.5 && imc < 24.5) {
       _result = 'Peso ideal (${imc.toStringAsFixed(2)})';
-    } else if (imc > 25 || imc < 29.9) {
+    } else if (imc > 25 && imc < 29.9) {
       _result = 'Sobrepeso (${imc.toStringAsFixed(2)})';
-    } else if (imc > 30 || imc < 34.9) {
+    } else if (imc > 30 && imc < 34.9) {
       _result = 'Obesidade Grau I (${imc.toStringAsFixed(2)})';
-    } else if (imc > 35 || imc < 39.9) {
+    } else if (imc > 35 && imc < 39.9) {
       _result = 'Obesidade Grau II (${imc.toStringAsFixed(2)})';
     } else if (imc > 40) {
       _result = 'Obesidade Grau III (${imc.toStringAsFixed(2)})';
